@@ -1,3 +1,6 @@
+package database;
+
+import javax.naming.Name;
 import java.util.Vector;
 
 public class Users {
@@ -5,7 +8,7 @@ public class Users {
 
     private String username;
 
-    private int userpwd;
+    private String userpwd;
 
     private String userAccountType;
 
@@ -28,10 +31,10 @@ public class Users {
         this.username = username;
     }
 
-    public int getUserpwd() {
+    public String getUserpwd() {
         return userpwd;
     }
-    public void setUserpwd(int userpwd) {
+    public void setUserpwd(String userpwd) {
         this.userpwd = userpwd;
     }
 
@@ -49,9 +52,6 @@ public class Users {
 
     public int getCredits() {return credits; }
     public void setCredits(int credits) { this.credits = credits; }
-
-
     public void setState(String state) {this.state = state; }
-
     public String getState() {return state; }
 }
